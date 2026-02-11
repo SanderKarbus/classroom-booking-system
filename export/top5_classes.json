@@ -1,0 +1,14 @@
+[
+  {
+    "result": {
+      "classroom": "Classroom B",
+      "total_hours": 4
+    }
+  },
+  {
+    "result": {
+      "classroom": "Classroom A",
+      "total_hours": 4
+    }
+  }
+]
