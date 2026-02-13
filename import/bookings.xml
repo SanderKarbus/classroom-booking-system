@@ -1,0 +1,20 @@
+<bookings>
+  <booking>
+    <classroom_name>C101</classroom_name>
+    <user_name>Teacher Mari</user_name>
+    <lesson_type>Lecture</lesson_type>
+    <booking_date>2026-02-11</booking_date>
+    <start_time>09:00</start_time>
+    <end_time>11:00</end_time>
+    <participants>15</participants>
+  </booking>
+  <booking>
+    <classroom_name>C202</classroom_name>
+    <user_name>Group A1</user_name>
+    <lesson_type>Lab</lesson_type>
+    <booking_date>2026-02-12</booking_date>
+    <start_time>10:00</start_time>
+    <end_time>12:00</end_time>
+    <participants>25</participants>
+  </booking>
+</bookings>
