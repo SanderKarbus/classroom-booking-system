@@ -35,3 +35,11 @@ SELECT
     SUM(EXTRACT(EPOCH FROM (end_time - start_time)) / 3600) AS total_hours
 FROM booking
 GROUP BY classroom_id, booking_date;
+
+-- N:M relation: booking <-> user_or_group (participants)
+create table if not exists booking_participants (
+  booking_id int not null references booking(id) on delete cascade,
+  user_or_group_id int not null references user_or_group(id) on delete cascade,
+  role text default 'participant',
+  primary key (booking_id, user_or_group_id)
+);
