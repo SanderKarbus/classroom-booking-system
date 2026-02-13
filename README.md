@@ -1,21 +1,21 @@
 # classroom-booking-system
 database
 
-# Import documentation
+# Import (CSV + JSON + XML)
 
-This folder contains data import examples for the classroom booking system.
+This folder contains import files required by the assignment.
 
-## CSV import
-- classes.csv – classroom data
-Imported using SQL COPY or database import tools.
+## 1) CSV import
+- classes.csv (classrooms)
 
-## JSON import
-- teachers.json – teachers and groups
-Imported using SQL script import_teachers.sql.
+Imported with SQL COPY or database import tools.
 
-## XML import
-- bookings.xml – booking data
-XML structure prepared for programmatic import.
-Import logic is demonstrated in import_bookings.py.
+## 2) JSON import
+- teachers.json (users + user groups)
+- import_teachers.sql (SQL script that inserts groups and users)
 
-Note: XML import script requires a PostgreSQL connection string (DATABASE_URL).
+## 3) XML import
+- bookings.xml (bookings)
+- import_bookings.py (example script that parses XML and inserts into PostgreSQL)
+
+Note: The XML import script is provided as a working example; the assignment requires the XML format and import logic to be present.
