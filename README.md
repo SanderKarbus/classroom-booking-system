@@ -28,3 +28,11 @@ Basic CRUD operations are demonstrated using SQL queries in `crud.sql`.
 
 The database application is implemented as a simple CLI-based solution using SQL queries.
 CRUD operations and a statistical view are demonstrated without a graphical user interface.
+
+## CRUD Demonstration
+
+### Read bookings
+![Read bookings](read_bookings.png)
+
+### Classroom usage statistics
+![Classroom usage statistics](statistics_classroom_usage.png)
