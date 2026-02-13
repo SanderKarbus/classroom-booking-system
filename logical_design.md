@@ -23,3 +23,5 @@ This database implements a classroom booking system.
 3. capacity > 0 (CHECK constraint in classroom table)
 
 Foreign keys ensure referential integrity between related tables.
+
+The N:M relationship is implemented using the junction table `booking_participants`, which links `booking` and `user_or_group` (participants).
