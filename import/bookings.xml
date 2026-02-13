@@ -1,20 +1,26 @@
 <bookings>
   <booking>
-    <classroom_name>C101</classroom_name>
-    <user_name>Teacher Mari</user_name>
+    <classroom_name>A101</classroom_name>
+    <user_email>mari.tamm@school.ee</user_email>
     <lesson_type>Lecture</lesson_type>
-    <booking_date>2026-02-11</booking_date>
-    <start_time>09:00</start_time>
-    <end_time>11:00</end_time>
-    <participants>15</participants>
+    <start_time>2026-02-14 10:00</start_time>
+    <end_time>2026-02-14 12:00</end_time>
+    <participants>18</participants>
   </booking>
   <booking>
-    <classroom_name>C202</classroom_name>
-    <user_name>Group A1</user_name>
+    <classroom_name>B202</classroom_name>
+    <user_email>jaan.saar@school.ee</user_email>
+    <lesson_type>Seminar</lesson_type>
+    <start_time>2026-02-15 14:00</start_time>
+    <end_time>2026-02-15 15:30</end_time>
+    <participants>12</participants>
+  </booking>
+  <booking>
+    <classroom_name>C303</classroom_name>
+    <user_email>kati.kask@school.ee</user_email>
     <lesson_type>Lab</lesson_type>
-    <booking_date>2026-02-12</booking_date>
-    <start_time>10:00</start_time>
-    <end_time>12:00</end_time>
-    <participants>25</participants>
+    <start_time>2026-02-16 09:00</start_time>
+    <end_time>2026-02-16 11:00</end_time>
+    <participants>10</participants>
   </booking>
 </bookings>
