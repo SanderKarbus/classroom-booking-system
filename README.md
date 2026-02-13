@@ -23,3 +23,8 @@ Note: The XML import script is provided as a working example; the assignment req
 ## CRUD functionality
 
 Basic CRUD operations are demonstrated using SQL queries in `crud.sql`.
+
+### Application type
+
+The database application is implemented as a simple CLI-based solution using SQL queries.
+CRUD operations and a statistical view are demonstrated without a graphical user interface.
