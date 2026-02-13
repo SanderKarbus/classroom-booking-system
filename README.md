@@ -19,3 +19,7 @@ Imported with SQL COPY or database import tools.
 - import_bookings.py (example script that parses XML and inserts into PostgreSQL)
 
 Note: The XML import script is provided as a working example; the assignment requires the XML format and import logic to be present.
+
+## CRUD functionality
+
+Basic CRUD operations are demonstrated using SQL queries in `crud.sql`.
