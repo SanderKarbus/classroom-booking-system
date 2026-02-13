@@ -26,3 +26,6 @@ where id = 1;
 -- DELETE: remove booking
 delete from booking
 where id = 1;
+
+-- STATISTICS: classroom usage hours per day
+select * from classroom_usage_hours;
