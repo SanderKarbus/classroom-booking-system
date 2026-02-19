@@ -26,3 +26,5 @@ The application provides:
 - Update booking
 - Delete booking
 - Show classroom usage statistics
+
+## crud.sql contains standalone SQL test queries used during development.
