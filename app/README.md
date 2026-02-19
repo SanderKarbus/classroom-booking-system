@@ -1,8 +1,28 @@
-# CRUD Demo
+# Classroom Booking CLI Application
 
-CRUD operations are demonstrated using Supabase SQL Editor.
+## Requirements
+- Python 3.x
+- PostgreSQL running
+- Database created using schema.sql
 
-Steps:
-1. Open Supabase Dashboard
-2. Go to SQL Editor
-3. Run queries from crud.sql
+## Installation
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+## Configuration
+
+Edit db.py and set your database name, user and password.
+
+## Run application
+
+python main.py
+
+The application provides:
+
+- List bookings
+- Add booking
+- Update booking
+- Delete booking
+- Show classroom usage statistics
