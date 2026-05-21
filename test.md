@@ -7,14 +7,14 @@
 
 ## 1. Rakenduse ja keskkonna kirjeldus
 
-**Nimetus:** Arvutiklasside broneerimissüsteemi CLI rakendus
+**Nimetus:** Arvutiklasside broneerimissüsteemi CLI-rakendus
 
-**Milleks mõeldud:** Python 3.x baasil loodud käsurearakendus (CLI), mis liidestub psycopg2-binary teegi kaudu PostgreSQL andmebaasiga, et hallata klasside broneeringuid ja kuvada kasutusstatistikat.
+**Milleks mõeldud:** Python 3.x baasil loodud käsurearakendus (CLI), mis liidestub *psycopg2-binary* teegi kaudu PostgreSQL-andmebaasiga, et hallata klasside broneeringuid ja kuvada kasutusstatistikat.
 
 **Olulisemad funktsioonid (kõik käivitatavad läbi `main.py`):**
-- **Täielik broneeringute haldus (CRUD):** Broneeringute vaatamine (List), lisamine (Add), muutmine (Update) ja kustutamine (Delete).
-- **Statistika moodul:** Klasside kasutusstatistika arvutamine ja kuvamine otse käsureale.
-- **Andmebaasi ühenduse haldus:** Keskne andmebaasi konfigureerimine ja turvaline ühendamine funktsiooni `get_connection()` kaudu (`db.py`).
+- **Täielik broneeringute haldus (CRUD):** broneeringute vaatamine (List), lisamine (Add), muutmine (Update) ja kustutamine (Delete).
+- **Statistika moodul:** klasside kasutusstatistika arvutamine ja kuvamine otse käsureale.
+- **Andmebaasi ühenduse haldus:** keskne andmebaasi konfigureerimine ja turvaline ühendamine funktsiooni `get_connection()` kaudu (`db.py`).
 
 ---
 
@@ -25,6 +25,7 @@ Testimise eesmärk on kontrollida, et `main.py` käsurealiides ja selle CRUD-fun
 ---
 
 ## 3. Testjuhtumid
+
 
 | ID | Testi nimetus | Tüüp | Testimise sammud | Oodatav tulemus | Tegelik tulemus | Märkused |
 |---|---|---|---|---|---|---|
