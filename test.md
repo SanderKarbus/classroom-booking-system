@@ -1,8 +1,7 @@
 # Süsteemi testiplaan (ÕV2)
 
-**Grupp:** TAK25  
-**Projekt:** Classroom Booking CLI Application (Python + PostgreSQL)  
-**Autor:** Sander Karbus  
+**Classroom Booking CLI Application (Python + PostgreSQL):**  
+ 
 
 ---
 
