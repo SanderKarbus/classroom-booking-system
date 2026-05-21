@@ -1,6 +1,6 @@
 # Süsteemi testiplaan (ÕV2)
 
-**Classroom Booking CLI Application (Python + PostgreSQL):**  
+**Classroom Booking CLI Application (Python + PostgreSQL)**  
  
 
 ---
