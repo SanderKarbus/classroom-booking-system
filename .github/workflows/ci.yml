@@ -1,0 +1,65 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_DB: classroom_booking_test
+          POSTGRES_USER: admin
+          POSTGRES_PASSWORD: admin
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f app/requrements.txt ]; then pip install -r app/requrements.txt; fi
+          pip install pytest pytest-cov
+      
+      - name: Wait for PostgreSQL
+        run: |
+          until pg_isready -h localhost -p 5432; do
+            echo "Waiting for PostgreSQL..."
+            sleep 1
+          done
+      
+      - name: Run database migrations
+        run: |
+          PGPASSWORD=admin psql -h localhost -U admin -d classroom_booking_test -f schema.sql
+      
+      - name: Validate Python syntax
+        run: |
+          python -m py_compile app/main.py
+          python -m py_compile app/db.py
+      
+      - name: Check AI changelog
+        run: |
+          if [ ! -f ai_changelog.md ]; then
+            echo "Warning: ai_changelog.md not found"
+          else
+            echo "ai_changelog.md exists"
+            cat ai_changelog.md
+          fi
