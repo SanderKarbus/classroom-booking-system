@@ -1,0 +1,26 @@
+﻿========================================
+QUALITY CHECKS - Classroom Booking System
+========================================
+
+--- pytest ---
+============================= test session starts =============================
+platform win32 -- Python 3.14.5, pytest-9.1.0, pluggy-1.6.0 -- C:\Users\Sh2n1\AppData\Local\Python\pythoncore-3.14-64\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Projektid\Kolme ⁿlesande koond
+collecting ... collected 3 items
+
+tests/test_simple.py::test_placeholder PASSED                            [ 33%]
+tests/test_simple.py::test_database_connection_exists PASSED             [ 66%]
+tests/test_simple.py::test_main_exists PASSED                            [100%]
+
+============================== 3 passed in 0.02s ==============================
+
+--- Python syntax check (main.py) ---
+Syntax OK
+
+--- Python syntax check (db.py) ---
+Syntax OK
+
+========================================
+ALL CHECKS PASSED
+========================================
