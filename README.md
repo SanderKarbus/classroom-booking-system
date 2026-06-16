@@ -36,3 +36,22 @@ CRUD operations and a statistical view are demonstrated without a graphical user
 
 ### Classroom usage statistics
 ![Classroom usage statistics](statistics_classroom_usage.png)
+
+## Quality Assurance
+
+### Test results
+![Test results](test_evidence.png)
+
+### CI/CD Workflow
+![CI/CD pipeline](ci-cd-workflow-screenshot2.png)
+
+### CI/CD Workflow (earlier)
+![CI/CD pipeline earlier](ci-cd-workflow-screenshot.png)
+
+## Database Design
+
+### ERD Diagram
+![ERD diagram](erd_crowsfoot.png)
+
+### UML Class Diagram
+![UML class diagram](uml_class.png)
